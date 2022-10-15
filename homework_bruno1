@@ -1,0 +1,18 @@
+# минимальное число из 5
+numbers = []
+while len(numbers) != 5:
+    number = int(input("Введите любое число: "))
+    numbers.append(number)
+print(min(numbers))
+
+# возраст без datetime
+date_year = 2022
+date_month = 10
+date_day = 15
+year = int(input('Введите год рождения: '))
+month = int(input('Введите месяц рождения: '))
+day = int(input('Введите день рождения: '))
+age = date_year - year
+if month > date_month or day > date_day:
+    age -= 1
+print(age)
