@@ -13,6 +13,9 @@ year = int(input('Введите год рождения: '))
 month = int(input('Введите месяц рождения: '))
 day = int(input('Введите день рождения: '))
 age = date_year - year
-if month > date_month or day > date_day:
+if month < date_month:
     age -= 1
+elif month == date_month:
+    if day < date_day:
+        age -= 1
 print(age)
