@@ -1,0 +1,9 @@
+def count_smileys(arr):
+    elements = {':', ';', '-', '~', ')', 'D'}
+    count = len(arr)
+    for i in arr:
+        for j in i:
+            if j not in elements:
+                count -= 1
+                break
+    return count
