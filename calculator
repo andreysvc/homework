@@ -1,0 +1,44 @@
+def calculate():
+    def sum(a,b):
+        return a+b
+
+    def dif(a,b):
+        return a-b
+
+    def mul(a,b):
+        return a*b
+
+    def div(a,b):
+        return a/b
+
+    def sqr(a,b):
+        return a**b
+    operations = {"+", "-", "*", "/", "**"}
+    a = int(input('Введите число 1: '))
+    b = int(input('Введите число 2: '))
+    while True:
+        func = input('''
+Список операций:
+#Сложение - "+"
+#Вычитание - "-"
+#Умножение - "*"
+#Деление - "/"
+#Возведение в квадрат - "**"
+Введите операцию (без кавычек): ''')
+        if func not in operations:
+            print("Такой операции нет, введите одну из представленных в списке.")
+        elif func == "+":
+            print(f'{a} + {b} = {sum(a,b)}')
+            break
+        elif func == "-":
+            print(f'{a} - {b} = {dif(a,b)}')
+            break
+        elif func == "*":
+            print(f'{a} * {b} = {mul(a,b)}')
+            break
+        elif func == "/":
+            print(f'{a} / {b} = {div(a,b)}')
+            break
+        else:
+            print(f'{a} ** {b} = {sqr(a,b)}')
+            break
