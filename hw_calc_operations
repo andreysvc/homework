@@ -1,0 +1,10 @@
+def summ(a,b):
+    return print(f'Результат выражения {a} + {b}: {a+b}')
+def dif(a,b):
+    return print(f'Результат выражения {a} - {b}: {a-b}')
+def mul(a,b):
+    return print(f'Результат выражения {a} * {b}: {a*b}')
+def div(a,b):
+    return print(f'Результат выражения {a} / {b}: {a/b}')
+def sqr(a,b):
+    return print(f'Результат выражения {a} в степени {b}: {a**b}')
