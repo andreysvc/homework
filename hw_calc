@@ -1,0 +1,34 @@
+from calc.operations import *
+operations = {"+", "-", "*", "/", "**"}
+try:
+    a = int(input('Введите число 1: '))
+    b = int(input('Введите число 2: '))
+except ValueError:
+    print("Это не похоже на число.")
+else:
+    while True:
+        c = input('''
+    Список операций:
+    #Сложение - "+"
+    #Вычитание - "-"
+    #Умножение - "*"
+    #Деление - "/"
+    #Возведение в квадрат - "**"
+    Введите операцию (без кавычек): ''')
+        if c not in operations:
+            print("Такой операции нет, введите одну из представленных в списке.")
+        elif c == "+":
+            summ(a,b)
+            break
+        elif c == "-":
+            dif(a,b)
+            break
+        elif c == "*":
+            mul(a,b)
+            break
+        elif c == "/":
+            div(a,b)
+            break
+        else:
+            sqr(a,b)
+            break
