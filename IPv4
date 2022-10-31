@@ -1,0 +1,4 @@
+import re
+line = "asfas;kfas;fkass;kas;sfla,fa,as.cc 123.456.78.90 alkgas;lkas;fkafa225.661.25.71"
+result = re.findall(r'\d{3}[.]\d{3}[.]\d{2}[.]\d{2}', line)
+print(result)
