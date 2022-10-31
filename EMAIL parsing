@@ -1,0 +1,4 @@
+import re
+line = input()
+result = re.findall(r'\w+[@]testdomain[.]\w+', line)
+print(result)
